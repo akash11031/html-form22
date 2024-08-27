@@ -1,0 +1,380 @@
+/* google font linking */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS start*/
+:root{
+    --komola: #ff9b51;
+    --var2:#f5f5f5 ;
+    --sada:#ffffff;
+    --kala:black ;
+    --var3:#b4b4b7;
+    
+    
+}
+*, *::after, *::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+}
+
+ul li{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px; 
+    line-height: 46px;
+}
+
+h4{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.under-line{
+  /* width: 100px; 
+  height: 3px; 
+  background-color:var(--komola); */
+  position: relative;
+  padding: 25px 0px;
+
+}
+.under-line::after{
+    content: '';
+    width: 75px; 
+    height: 3px; 
+    background-color:var(--komola);
+    position: absolute;
+    transition: 0.8s;
+    /* transform: scale(0 100); */
+    
+ }
+
+ .under-line:hover::after{
+    transition: 0.8s; 
+    width: 150px;
+      
+ }
+
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+i{
+    font-size: 48px;
+}
+/* Global CSS end*/
+
+/* header section CSS start*/
+header{
+    background-color: var(--kala);
+}
+
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .nav-item{
+position: relative;
+margin-left: 25px;
+}
+
+header .nav-item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--komola);
+    transition: 0.8s;
+    transform: scale(0%, 100%);
+    left: 0;
+}
+
+header .nav-item:hover::after{
+    transition: 0.8s;
+    transform: scale(100%, 100%);
+}
+
+header .nav-link{
+ color: var(--var2);
+ font-size: 11.52pt;
+}
+
+header .nav-link:hover{
+ color: var(--var2);
+}
+
+header .nav-item .active{
+color: var(--sada) !important;
+}
+
+
+header .navbar .first-child::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--komola);
+    transition: 0.8s;
+    transform: scale(50%, 100%);
+    left: 0;
+}
+
+header .navbar .first-child:hover::after{
+    transition: 0.8s;
+    transform: scale(100%, 100%);
+}
+/* header section CSS end*/
+
+/* banner section CSS start*/
+.banner-section{
+    background: url(../img/banner.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-section .b-inner{
+    padding-top: 15%;
+}
+
+.banner-section .b-inner h1{
+    color: var(--sada);
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.banner-section .b-inner h1 span{
+    color: var(--komola);
+    font-weight: 200;
+}
+
+.banner-section .b-inner h3{
+    color: var(--var2);
+    width: 84%;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.banner-section .b-inner .under-line{
+    /* width: 100px; 
+    height: 3px; 
+    background-color:var(--komola); */
+    position: relative;
+    padding: 25px 0px;
+  
+  }
+  .banner-section .b-inner .under-line::after{
+      content: '';
+      width: 75px; 
+      height: 3px; 
+      background-color:var(--var2);
+      position: absolute;
+      transition: 0.8s;
+      /* transform: scale(0 100); */
+      
+   }
+  
+   .banner-section .b-inner .under-line:hover::after{
+      transition: 0.8s; 
+      width: 150px;
+        
+   }
+
+.banner-section .b-inner p{
+    color: var(--var2);
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    width: 65%;
+
+    
+}
+
+.banner-section .b-inner .btns{
+    padding-top: 30px;
+}
+
+.banner-section .b-inner .btns a{
+    padding: 8px 25px;
+    border: 2px solid var(--var2);
+    background: transparent;
+    color: var(--var2);
+    transition: 0.3s;
+}
+
+.banner-section .b-inner .btns a:hover{
+    border: 2px solid var(--komola);
+    background: var(--komola);
+    color: var(--kala);
+    transition: 0.3s;
+}
+/* banner form */
+.banner-section .form-inner{
+    padding-top: 31%;
+    padding-left: 24%;
+    margin-right: -16%;
+}
+
+.banner-section .form-inner .card{
+ width: 80%;
+
+ 
+}
+
+.banner-section .form-inner form h5{
+padding: 15px 0%;
+font-size: 20px;
+font-weight: bold;
+background: var(--var2);
+text-align: center;
+color: var(--kala);
+
+}
+
+.banner-section .form-inner form h5 span{
+ color: var(--komola);
+}
+
+.banner-section .form-inner form .form-control{
+ padding: 24px;
+ border-bottom: 2px solid var(--var2);
+ border-top: none;
+ border-radius: 0%;
+ color: var(--var2);
+ font-weight: 300;
+}    
+
+.banner-section .form-inner form .btn{
+ background: var(--komola);
+ color: var(--sada);
+ border-radius: 0%;
+ padding: 20px ;
+ font-weight: bold;
+ transition: 0.3s;
+}   
+
+.banner-section .form-inner form .btn:hover{
+ background: var(--var2);
+ color: var(--komola);
+ transition: 0.3s;
+ border: 2px solid var(--komola);
+}   
+
+
+/* banner section CSS end*/
+
+
+
+/* s-media section CSS start*/
+.s-media{
+   padding: 25px 0px 15px ;
+   border-bottom: 2px solid var(--var3);
+ }
+   
+   .s-media .s-media-heading{
+    
+   }
+   
+   .s-media .s-media-heading p{
+    width: 90%;
+    color: var(--var3);
+   }
+   
+   .s-media .sm-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+   }
+   
+   .s-media .sm-icon i{
+    color: var(--var3);
+    font-size: 46px;
+   }
+   
+   .s-media .sm-icon i:hover{
+    color: var(--komola);
+   }
+   
+/*  s-media section CSS end*/
+
+/* tab section CSS start*/
+.tab-section{
+    background: var(--var2);
+    padding: 150px 0px;
+}
+
+.tab-section .nav-link{
+    width: 120px;
+    height: 120px;
+    background: var(--kala);
+    color: var(--sada);
+    border-radius: 0%;
+    border-bottom: 1px solid var(--var3);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--sada);
+    background-color: var(--komola);
+    border-radius: 0%;
+}
+
+.tab-section .tab-content{
+    padding-left: 10%;
+}
+
+.tab-section .tab-content h4{
+    padding-bottom: 50px;
+}
+
+.tab-section .tab-content p{
+
+    width: 95%;
+    color:#bebec0 ;
+    padding-bottom: 50px;
+    /* color: var(--var3); */
+    font-weight: 500;
+}
+
+.tab-section .tab-content .btns{
+    
+}
+
+.tab-section .tab-content .btns a{
+    padding: 8px 25px;
+    border: 1px solid var(--komola);
+    background: var(--komola);
+    
+    color: var(--var2);
+    transition: 0.3s;
+}
+
+.tab-section .tab-content .btns a:hover{
+    border: 2px solid var(--komola);
+    background: transparent;
+    color: var(--kala);
+    transition: 0.3s;
+}
+
+/* tab section CSS end*/
+
+/* banner section CSS start*/
+
+/* banner section CSS end*/
